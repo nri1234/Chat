@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.AppHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+.AppTitle {
+    display: flex;
+    width: 25vw;
+    border-right: 1px solid #ccc;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 1.2em;
+    color: black;
+}
+
+.AppRoom {
+    display: flex;
+    width: 75vw;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 1.2em;
+    color: black;
+}
+
+.AppBody {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.MessageWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    flex: 1;
+}
