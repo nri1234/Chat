@@ -110,7 +110,7 @@ var options = {}
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(5)(content, options);
+var update = __webpack_require__(6)(content, options);
 
 if (content.locals) {
   module.exports = content.locals;
@@ -945,6 +945,28 @@ exports.decodePayloadAsBinary = function (data, binaryType, callback) {
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var content = __webpack_require__(74);
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(6)(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 /*
@@ -1038,7 +1060,7 @@ function toComment(sourceMap) {
 }
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1326,7 +1348,7 @@ module.exports = function (list, options) {
 };
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(75);
@@ -1340,7 +1362,7 @@ var options = {}
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(5)(content, options);
+var update = __webpack_require__(6)(content, options);
 
 if (content.locals) {
   module.exports = content.locals;
@@ -1348,7 +1370,7 @@ if (content.locals) {
 
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {/**
@@ -1508,10 +1530,10 @@ function localstorage() {
     return window.localStorage;
   } catch (e) {}
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(11)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(12)))
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports) {
 
 /**
@@ -1554,7 +1576,7 @@ exports.decode = function (qs) {
 };
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports) {
 
 module.exports = function (a, b) {
@@ -1566,7 +1588,7 @@ module.exports = function (a, b) {
 };
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {/**
@@ -1731,10 +1753,10 @@ function localstorage() {
     return window.localStorage;
   } catch (e) {}
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(11)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(12)))
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -1947,7 +1969,7 @@ process.umask = function () {
 };
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports) {
 
 /**
@@ -2112,7 +2134,7 @@ function plural(ms, n, name) {
 }
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -2124,7 +2146,7 @@ var Emitter = __webpack_require__(2);
 
 var binary = __webpack_require__(52);
 
-var isArray = __webpack_require__(14);
+var isArray = __webpack_require__(15);
 
 var isBuf = __webpack_require__(23);
 /**
@@ -2530,7 +2552,7 @@ function error(msg) {
 }
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -2540,7 +2562,7 @@ module.exports = Array.isArray || function (arr) {
 };
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4400,7 +4422,7 @@ function isnan(val) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(24)))
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // browser shim for xmlhttprequest module
@@ -4438,7 +4460,7 @@ module.exports = function (opts) {
 };
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -4598,7 +4620,7 @@ Transport.prototype.onClose = function () {
 };
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(73);
@@ -4612,29 +4634,7 @@ var options = {}
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(5)(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
-}
-
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(74);
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = "head";
-options.singleton = false;
-
-var update = __webpack_require__(5)(content, options);
+var update = __webpack_require__(6)(content, options);
 
 if (content.locals) {
   module.exports = content.locals;
@@ -4656,7 +4656,7 @@ var options = {}
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(5)(content, options);
+var update = __webpack_require__(6)(content, options);
 
 if (content.locals) {
   module.exports = content.locals;
@@ -4825,7 +4825,7 @@ var isView = function (obj) {
 function isBuf(obj) {
   return withNativeBuffer && Buffer.isBuffer(obj) || withNativeArrayBuffer && (obj instanceof ArrayBuffer || isView(obj));
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(15).Buffer))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(16).Buffer))
 
 /***/ }),
 /* 24 */
@@ -4863,13 +4863,13 @@ var Socket = __webpack_require__(31);
 
 var Emitter = __webpack_require__(2);
 
-var parser = __webpack_require__(13);
+var parser = __webpack_require__(14);
 
 var on = __webpack_require__(32);
 
 var bind = __webpack_require__(33);
 
-var debug = __webpack_require__(7)('socket.io-client:manager');
+var debug = __webpack_require__(8)('socket.io-client:manager');
 
 var indexOf = __webpack_require__(30);
 
@@ -5427,7 +5427,7 @@ Manager.prototype.onreconnect = function () {
 /**
  * Module dependencies
  */
-var XMLHttpRequest = __webpack_require__(16);
+var XMLHttpRequest = __webpack_require__(17);
 
 var XHR = __webpack_require__(59);
 
@@ -5485,17 +5485,17 @@ function polling(opts) {
 /**
  * Module dependencies.
  */
-var Transport = __webpack_require__(17);
+var Transport = __webpack_require__(18);
 
-var parseqs = __webpack_require__(8);
+var parseqs = __webpack_require__(9);
 
 var parser = __webpack_require__(3);
 
-var inherit = __webpack_require__(9);
+var inherit = __webpack_require__(10);
 
 var yeast = __webpack_require__(29);
 
-var debug = __webpack_require__(10)('engine.io-client:polling');
+var debug = __webpack_require__(11)('engine.io-client:polling');
 /**
  * Module exports.
  */
@@ -5507,7 +5507,7 @@ module.exports = Polling;
  */
 
 var hasXHR2 = (function () {
-  var XMLHttpRequest = __webpack_require__(16);
+  var XMLHttpRequest = __webpack_require__(17);
 
   var xhr = new XMLHttpRequest({
     xdomain: false
@@ -5742,7 +5742,7 @@ Polling.prototype.uri = function () {
 /*
  * Module requirements.
  */
-var isArray = __webpack_require__(14);
+var isArray = __webpack_require__(15);
 
 var toString = Object.prototype.toString;
 var withNativeBlob = typeof Blob === 'function' || typeof Blob !== 'undefined' && toString.call(Blob) === '[object BlobConstructor]';
@@ -5793,7 +5793,7 @@ function hasBinary(obj) {
 
   return false;
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(15).Buffer))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(16).Buffer))
 
 /***/ }),
 /* 29 */
@@ -5893,7 +5893,7 @@ module.exports = function (arr, obj) {
 /**
  * Module dependencies.
  */
-var parser = __webpack_require__(13);
+var parser = __webpack_require__(14);
 
 var Emitter = __webpack_require__(2);
 
@@ -5903,9 +5903,9 @@ var on = __webpack_require__(32);
 
 var bind = __webpack_require__(33);
 
-var debug = __webpack_require__(7)('socket.io-client:socket');
+var debug = __webpack_require__(8)('socket.io-client:socket');
 
-var parseqs = __webpack_require__(8);
+var parseqs = __webpack_require__(9);
 
 var hasBin = __webpack_require__(28);
 /**
@@ -6597,11 +6597,11 @@ var App =
  */
 var url = __webpack_require__(48);
 
-var parser = __webpack_require__(13);
+var parser = __webpack_require__(14);
 
 var Manager = __webpack_require__(25);
 
-var debug = __webpack_require__(7)('socket.io-client');
+var debug = __webpack_require__(8)('socket.io-client');
 /**
  * Module exports.
  */
@@ -6691,7 +6691,7 @@ exports.Socket = __webpack_require__(31);
 "use strict";
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _MessageForm_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(18);
+/* harmony import */ var _MessageForm_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
 /* harmony import */ var _MessageForm_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_MessageForm_css__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -6784,27 +6784,37 @@ var MessageForm =
 "use strict";
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _MessageList_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
+/* harmony import */ var _MessageList_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4);
 /* harmony import */ var _MessageList_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_MessageList_css__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
 var Message = function Message(props) {
+  var style = _MessageList_css__WEBPACK_IMPORTED_MODULE_1___default.a.Message + ' ';
+
+  if (props.from === 'System') {
+    style += _MessageList_css__WEBPACK_IMPORTED_MODULE_1___default.a.SystemMessage;
+  } else if (props.from === 'Server message') {
+    style += _MessageList_css__WEBPACK_IMPORTED_MODULE_1___default.a.ServerMessage;
+  }
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _MessageList_css__WEBPACK_IMPORTED_MODULE_1___default.a.Message
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, props.from, " :"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, props.text));
+    className: style
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, props.from, ": "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, props.text));
 };
 
 var MessageList = function MessageList(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _MessageList_css__WEBPACK_IMPORTED_MODULE_1___default.a.MessageList
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _MessageList_css__WEBPACK_IMPORTED_MODULE_1___default.a.MessageWrapper
   }, props.messages.map((function (message, i) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Message, {
       key: i,
       from: message.from,
       text: message.text
     });
-  })));
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (MessageList);
@@ -6816,7 +6826,7 @@ var MessageList = function MessageList(props) {
 "use strict";
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _UsersList_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
+/* harmony import */ var _UsersList_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7);
 /* harmony import */ var _UsersList_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_UsersList_css__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -14610,7 +14620,7 @@ module.exports = function (originalModule) {
  */
 var parseuri = __webpack_require__(22);
 
-var debug = __webpack_require__(7)('socket.io-client:url');
+var debug = __webpack_require__(8)('socket.io-client:url');
 /**
  * Module exports.
  */
@@ -14690,7 +14700,7 @@ exports.coerce = coerce;
 exports.disable = disable;
 exports.enable = enable;
 exports.enabled = enabled;
-exports.humanize = __webpack_require__(12);
+exports.humanize = __webpack_require__(13);
 /**
  * The currently active debug mode names, and names to skip.
  */
@@ -15041,7 +15051,7 @@ function localstorage() {
     return window.localStorage;
   } catch (e) {}
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(11)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(12)))
 
 /***/ }),
 /* 51 */
@@ -15058,7 +15068,7 @@ exports.coerce = coerce;
 exports.disable = disable;
 exports.enable = enable;
 exports.enabled = enabled;
-exports.humanize = __webpack_require__(12);
+exports.humanize = __webpack_require__(13);
 /**
  * Active `debug` instances.
  */
@@ -15277,7 +15287,7 @@ function coerce(val) {
 /**
  * Module requirements
  */
-var isArray = __webpack_require__(14);
+var isArray = __webpack_require__(15);
 
 var isBuf = __webpack_require__(23);
 
@@ -15682,7 +15692,7 @@ var transports = __webpack_require__(26);
 
 var Emitter = __webpack_require__(2);
 
-var debug = __webpack_require__(10)('engine.io-client:socket');
+var debug = __webpack_require__(11)('engine.io-client:socket');
 
 var index = __webpack_require__(30);
 
@@ -15690,7 +15700,7 @@ var parser = __webpack_require__(3);
 
 var parseuri = __webpack_require__(22);
 
-var parseqs = __webpack_require__(8);
+var parseqs = __webpack_require__(9);
 /**
  * Module exports.
  */
@@ -15813,7 +15823,7 @@ Socket.protocol = parser.protocol; // this is an int
  */
 
 Socket.Socket = Socket;
-Socket.Transport = __webpack_require__(17);
+Socket.Transport = __webpack_require__(18);
 Socket.transports = __webpack_require__(26);
 Socket.parser = __webpack_require__(3);
 /**
@@ -16416,15 +16426,15 @@ try {
 /**
  * Module requirements.
  */
-var XMLHttpRequest = __webpack_require__(16);
+var XMLHttpRequest = __webpack_require__(17);
 
 var Polling = __webpack_require__(27);
 
 var Emitter = __webpack_require__(2);
 
-var inherit = __webpack_require__(9);
+var inherit = __webpack_require__(10);
 
-var debug = __webpack_require__(10)('engine.io-client:polling-xhr');
+var debug = __webpack_require__(11)('engine.io-client:polling-xhr');
 /**
  * Module exports.
  */
@@ -17359,7 +17369,7 @@ exports.coerce = coerce;
 exports.disable = disable;
 exports.enable = enable;
 exports.enabled = enabled;
-exports.humanize = __webpack_require__(12);
+exports.humanize = __webpack_require__(13);
 /**
  * Active `debug` instances.
  */
@@ -17578,7 +17588,7 @@ function coerce(val) {
  */
 var Polling = __webpack_require__(27);
 
-var inherit = __webpack_require__(9);
+var inherit = __webpack_require__(10);
 /**
  * Module exports.
  */
@@ -17808,17 +17818,17 @@ JSONPPolling.prototype.doWrite = function (data, fn) {
 /* WEBPACK VAR INJECTION */(function(Buffer) {/**
  * Module dependencies.
  */
-var Transport = __webpack_require__(17);
+var Transport = __webpack_require__(18);
 
 var parser = __webpack_require__(3);
 
-var parseqs = __webpack_require__(8);
+var parseqs = __webpack_require__(9);
 
-var inherit = __webpack_require__(9);
+var inherit = __webpack_require__(10);
 
 var yeast = __webpack_require__(29);
 
-var debug = __webpack_require__(10)('engine.io-client:websocket');
+var debug = __webpack_require__(11)('engine.io-client:websocket');
 
 var BrowserWebSocket, NodeWebSocket;
 
@@ -18098,7 +18108,7 @@ WS.prototype.uri = function () {
 WS.prototype.check = function () {
   return !!WebSocketImpl && !('__initialize' in WebSocketImpl && this.name === WS.prototype.name);
 };
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(15).Buffer))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(16).Buffer))
 
 /***/ }),
 /* 69 */
@@ -18215,9 +18225,9 @@ Backoff.prototype.setJitter = function (jitter) {
 /* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)(false);
+exports = module.exports = __webpack_require__(5)(false);
 // Module
-exports.push([module.i, "ody {\r\n    margin: 0;\r\n}\r\n\r\n._1aOUYWHb1xWxyf55itOXwd {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex: 1;\r\n    height: 100vh;\r\n}\r\n\r\n._22GEnjbFn-ft-XKd37JsiZ {\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    border-bottom: 1px solid #ccc;\r\n}\r\n\r\n.x_tmP-3OGubtGvF1OFb4h {\r\n    display: flex;\r\n    width: 25vw;\r\n    border-right: 1px solid #ccc;\r\n    justify-content: center;\r\n    box-sizing: border-box;\r\n    padding: 20px;\r\n}\r\n\r\n.Zks7gB-JpVMIQfDX7kTgh {\r\n    display: flex;\r\n    width: 75vw;\r\n    justify-content: center;\r\n    box-sizing: border-box;\r\n    padding: 20px;\r\n}\r\n\r\n._1ENM9KYSohM689Y5JUCRgH {\r\n    display: flex;\r\n    flex-direction: row;\r\n    flex: 1;\r\n}\r\n\r\n._1Lr2m3YB6Y9F2OvvDCTAaC {\r\n    display: flex;\r\n    flex-direction: column;\r\n    width: 75vw;\r\n    flex: 1;\r\n}", ""]);
+exports.push([module.i, "body {\n    margin: 0;\n}\n\n._1aOUYWHb1xWxyf55itOXwd {\n    display: flex;\n    flex-direction: column;\n    width: 100vw;\n    height: 100vh;\n    margin: 0;\n}\n\n._22GEnjbFn-ft-XKd37JsiZ {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    border-bottom: 1px solid #ccc;\n    width: 100%;\n}\n\n.x_tmP-3OGubtGvF1OFb4h {\n    display: flex;\n    width: 25vw;\n    border-right: 1px solid #ccc;\n    justify-content: center;\n    box-sizing: border-box;\n    padding: 20px;\n    font-size: 1.2em;\n    color: black;\n}\n\n.Zks7gB-JpVMIQfDX7kTgh {\n    display: flex;\n    width: 75vw;\n    justify-content: center;\n    box-sizing: border-box;\n    padding: 20px;\n    font-size: 1.2em;\n    color: black;\n}\n\n._1ENM9KYSohM689Y5JUCRgH {\n    display: flex;\n    flex-direction: row;\n    flex: 1;\n    width: 100vw;\n    box-sizing: border-box;\n}\n\n._1Lr2m3YB6Y9F2OvvDCTAaC {\n    display: flex;\n    flex-direction: column;\n    width: 75vw;\n    flex: 1;\n}\n", ""]);
 // Exports
 exports.locals = {
 	"App": "_1aOUYWHb1xWxyf55itOXwd",
@@ -18232,9 +18242,9 @@ exports.locals = {
 /* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)(false);
+exports = module.exports = __webpack_require__(5)(false);
 // Module
-exports.push([module.i, ".aE-TcArMGIkIXDhQFgDKU {\r\n    display: flex;\r\n    flex-direction: row;\r\n}\r\n\r\n._3RWTJd8FS-N4rIafsJDyZH {\r\n    flex: 1;\r\n    padding: 20px;\r\n    border: 0;\r\n    border-top: 1px solid #ccc;\r\n}", ""]);
+exports.push([module.i, ".aE-TcArMGIkIXDhQFgDKU {\n    display: flex;\n    flex-direction: row;\n}\n\n._3RWTJd8FS-N4rIafsJDyZH {\n    flex: 1;\n    padding: 20px;\n    border: 0;\n    border-top: 1px solid #ccc;\n}\n", ""]);
 // Exports
 exports.locals = {
 	"MessageForm": "aE-TcArMGIkIXDhQFgDKU",
@@ -18245,26 +18255,26 @@ exports.locals = {
 /* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)(false);
+exports = module.exports = __webpack_require__(5)(false);
 // Module
-exports.push([module.i, ".vQ5aJsvnLIxRLM8c6p3i2 {\r\n    flex: 1;\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: flex-start;\r\n    width: 75vw;\r\n    padding: 20px;\r\n}", ""]);
+exports.push([module.i, ".vQ5aJsvnLIxRLM8c6p3i2 {\n    flex: 1;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    width: 75vw;\n    padding: 20px;\n}\n._3hmt1UkMiD01P3i4SuoZ6S {\n    display: flex;\n    width: 35%;\n    border: 1px solid black;\n    padding: 35px;\n    border-radius: 20px 0px 20px 0px;\n    background: lightblue;\n    font-size: 1.2em;\n    margin: 10px;\n}\n", ""]);
 // Exports
 exports.locals = {
-	"MessageList": "vQ5aJsvnLIxRLM8c6p3i2"
+	"MessageList": "vQ5aJsvnLIxRLM8c6p3i2",
+	"Message": "_3hmt1UkMiD01P3i4SuoZ6S"
 };
 
 /***/ }),
 /* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)(false);
+exports = module.exports = __webpack_require__(5)(false);
 // Module
-exports.push([module.i, "._2UULi6FAZEMuEc22uAbQyF {\r\n    display: flex;\r\n    flex: 1;\r\n    width: 25vw;\r\n    justify-content: flex-start;\r\n    flex-direction: column;\r\n    border-right: 1px solid #ccc;\r\n}\r\n\r\n.dkLMq8enzMciibhHGBA1U {\r\n    padding: 20px;\r\n    text-align: center;\r\n    background: #ccc;\r\n}\r\n\r\n.ltg4jF1eF0HzXsKVdKBZF {\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\n._28WHGmgRsA__7KtxQOgIvZ {\r\n    list-style: none;\r\n    border-bottom: 1px solid #ccc;\r\n    padding: 20px;\r\n    margin: 0 0 0 20px;\r\n}", ""]);
+exports.push([module.i, "._2UULi6FAZEMuEc22uAbQyF {\n    display: flex;\n    flex: 1;\n    width: 25vw;\n    justify-content: flex-start;\n    flex-direction: column;\n    border-right: 1px solid #ccc;\n}\n\n.dkLMq8enzMciibhHGBA1U {\n    padding: 20px;\n    text-align: center;\n    background: #ccc;\n    font-size: 1.2em;\n}\n\n\n\n._28WHGmgRsA__7KtxQOgIvZ {\n    list-style: none;\n    border-bottom: 1px solid #ccc;\n    padding: 20px;\n    margin: 0 0 0 20px;\n}\n", ""]);
 // Exports
 exports.locals = {
 	"Users": "_2UULi6FAZEMuEc22uAbQyF",
 	"UsersOnline": "dkLMq8enzMciibhHGBA1U",
-	"UsersList": "ltg4jF1eF0HzXsKVdKBZF",
 	"UserItem": "_28WHGmgRsA__7KtxQOgIvZ"
 };
 
@@ -18272,9 +18282,9 @@ exports.locals = {
 /* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)(false);
+exports = module.exports = __webpack_require__(5)(false);
 // Module
-exports.push([module.i, "._2UG4ude1ZEYdaWWKC6v2if {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    width: 100vw;\r\n    height: 100vh;\r\n}\r\n\r\n._126lw-i40tJiicwxVt1OBG {\r\n    padding: 20px;\r\n    font-size: 2em;\r\n    border: 0;\r\n    border-bottom: 1px solid #ccc;\r\n    width: 510px;\r\n}", ""]);
+exports.push([module.i, "._2UG4ude1ZEYdaWWKC6v2if {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 100vw;\n    height: 100vh;\n}\n\n._126lw-i40tJiicwxVt1OBG {\n    padding: 20px;\n    font-size: 1.5em;\n    border: 0;\n    border-bottom: 1px solid #ccc;\n    width: 510px;\n    text-align: center;\n}\n", ""]);
 // Exports
 exports.locals = {
 	"UserForm": "_2UG4ude1ZEYdaWWKC6v2if",
